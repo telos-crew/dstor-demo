@@ -135,7 +135,7 @@ const main = async () => {
 	console.log('uploadToken: ', uploadToken)
 	for (const file of filePaths) {
 		const fileData = fs.createReadStream(file)
-		console.log('fileData: ', fileData)
+		// console.log('fileData: ', fileData)
 		await uploadFile(uploadToken, accessToken, fileData)
 	}
 }
